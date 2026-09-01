@@ -17,42 +17,49 @@
       "title": "Kinesiología Respiratoria",
       "description": "Evaluación y tratamiento kinésico respiratorio orientado a favorecer la ventilación, movilización de secreciones y manejo de síntomas respiratorios, según la condición y necesidades de cada paciente.",
       "price": "$15.000",
+      "icon": "uploads/chatgpt-image-1-sept-2026-022537-pm-2.png",
       "category": "adultos"
     },
     {
       "title": "Rehabilitación Musculoesquelética",
       "description": "Evaluación y tratamiento de lesiones musculares y articulares, dolor, limitación de movilidad y pérdida de fuerza, orientado a recuperar la función y retomar tus actividades.",
       "price": "$20.000",
+      "icon": "uploads/chatgpt-image-1-sept-2026-022407-pm-1.png",
       "category": "adultos"
     },
     {
       "title": "Rehabilitación funcional en Personas Mayores",
       "description": "Atención orientada a mejorar fuerza, equilibrio, marcha, transferencias y autonomía. Prevención de caídas y recuperación funcional después de periodos de inmovilidad u hospitalización.",
       "price": "$20.000",
+      "icon": "uploads/chatgpt-image-1-sept-2026-022610-pm.png",
       "category": "adultos"
     },
     {
       "title": "Rehabilitación deportiva",
       "description": "Evaluación, fortalecimiento, readaptación funcional y retorno progresivo a la actividad física y deportiva.",
       "price": "$20.000",
+      "icon": "uploads/chatgpt-image-1-sept-2026-022624-pm.png",
       "category": "adultos"
     },
     {
       "title": "Kinesiología Respiratoria Pediátrica",
       "description": "Evaluación y tratamiento respiratorio en lactantes, niños y adolescentes, enfocado en facilitar la respiración, movilizar secreciones y acompañar la recuperación de cuadros respiratorios.",
       "price": "$15.000",
+      "icon": "uploads/chatgpt-image-1-sept-2026-022701-pm.png",
       "category": "pediatria"
     },
     {
       "title": "Rehabilitación musculoesquelética pediátrica",
       "description": "Evaluación y tratamiento de lesiones y alteraciones musculoesqueléticas, movilidad y recuperación funcional en niños y adolescentes.",
       "price": "$20.000",
+      "icon": "uploads/chatgpt-image-1-sept-2026-022640-pm.png",
       "category": "pediatria"
     },
     {
       "title": "Masoterapia",
       "description": "Técnicas manuales orientadas a aliviar tensión muscular, favorecer la recuperación y mejorar el bienestar físico.",
       "price": "$20.000",
+      "icon": "uploads/chatgpt-image-1-sept-2026-022715-pm.png",
       "category": "otros"
     }
   ],
