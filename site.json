@@ -38,15 +38,15 @@
       "category": "adultos"
     },
     {
-      "title": "Rehabilitación musculoesquelética pediátrica",
-      "description": "Evaluación y tratamiento de lesiones y alteraciones musculoesqueléticas, movilidad y recuperación funcional en niños y adolescentes.",
-      "price": "$20.000",
-      "category": "pediatria"
-    },
-    {
       "title": "Kinesiología Respiratoria Pediátrica",
       "description": "Evaluación y tratamiento respiratorio en lactantes, niños y adolescentes, enfocado en facilitar la respiración, movilizar secreciones y acompañar la recuperación de cuadros respiratorios.",
       "price": "$15.000",
+      "category": "pediatria"
+    },
+    {
+      "title": "Rehabilitación musculoesquelética pediátrica",
+      "description": "Evaluación y tratamiento de lesiones y alteraciones musculoesqueléticas, movilidad y recuperación funcional en niños y adolescentes.",
+      "price": "$20.000",
       "category": "pediatria"
     },
     {
