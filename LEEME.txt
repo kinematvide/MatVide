@@ -1,0 +1,13 @@
+MATVIDE — VERSIÓN FÁCIL PARA SUBIR DESDE IPAD
+
+Sube a GitHub estos 5 archivos sueltos:
+- index.html
+- admin.html
+- site.json
+- netlify.toml
+- LEEME.txt
+
+No necesitas subir carpetas en este primer paso.
+Cuando el panel funcione, las fotos crearán automáticamente la carpeta uploads.
+
+Después conectaremos el repositorio a Netlify y activaremos el acceso al administrador.

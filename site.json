@@ -1,0 +1,49 @@
+{
+  "brand": {
+    "name": "MATVIDE",
+    "descriptor": "Kinesiología & Rehabilitación",
+    "slogan": "Movemos tu bienestar",
+    "location": "San Carlos",
+    "whatsapp": "569XXXXXXXX",
+    "instagram": "@matvide.kine"
+  },
+  "hero": {
+    "title": "Atención kinésica a domicilio",
+    "text": "Evaluación, tratamiento y seguimiento personalizado en tu hogar.",
+    "image": ""
+  },
+  "services": [
+    {
+      "title": "Rehabilitación traumatológica",
+      "description": "Lesiones musculares y articulares, movilidad, fuerza y funcionalidad.",
+      "price": "$20.000"
+    },
+    {
+      "title": "Kinesiología respiratoria",
+      "description": "Evaluación y tratamiento kinésico respiratorio según necesidad.",
+      "price": "$20.000"
+    },
+    {
+      "title": "Adulto mayor",
+      "description": "Fuerza, equilibrio, marcha, prevención de caídas y autonomía.",
+      "price": "$20.000"
+    },
+    {
+      "title": "Rehabilitación deportiva",
+      "description": "Fortalecimiento, readaptación funcional y retorno progresivo al deporte.",
+      "price": "$20.000"
+    },
+    {
+      "title": "Post hospitalización",
+      "description": "Recuperación de fuerza, movilidad, marcha y capacidad funcional.",
+      "price": "$20.000"
+    }
+  ],
+  "about": {
+    "title": "Sobre MATVIDE",
+    "text": "Atención profesional y personalizada, orientada a recuperar movimiento, funcionalidad y autonomía.",
+    "image": ""
+  },
+  "gallery": [],
+  "videos": []
+}

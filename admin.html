@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Administrar MATVIDE</title></head>
+<body>
+<script>window.CMS_MANUAL_INIT=true;</script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script src="https://unpkg.com/decap-cms@^3.8.0/dist/decap-cms.js"></script>
+<script>
+CMS.init({config:{
+backend:{name:"git-gateway",branch:"main"},
+media_folder:"uploads",public_folder:"/uploads",locale:"es",
+collections:[{name:"sitio",label:"MATVIDE",files:[{name:"principal",label:"Editar página",file:"site.json",format:"json",fields:[
+{label:"Marca",name:"brand",widget:"object",fields:[
+{label:"Nombre",name:"name",widget:"string"},{label:"Descripción",name:"descriptor",widget:"string"},{label:"Eslogan",name:"slogan",widget:"string"},
+{label:"Ciudad / zona",name:"location",widget:"string"},{label:"WhatsApp (sin + ni espacios)",name:"whatsapp",widget:"string"},{label:"Instagram",name:"instagram",widget:"string"}]},
+{label:"Portada",name:"hero",widget:"object",fields:[
+{label:"Título",name:"title",widget:"string"},{label:"Texto",name:"text",widget:"text"},{label:"Foto",name:"image",widget:"image",required:false}]},
+{label:"Servicios y precios",name:"services",widget:"list",summary:"{{fields.title}} — {{fields.price}}",fields:[
+{label:"Servicio",name:"title",widget:"string"},{label:"Descripción",name:"description",widget:"text"},{label:"Precio",name:"price",widget:"string"}]},
+{label:"Sobre MATVIDE",name:"about",widget:"object",fields:[
+{label:"Título",name:"title",widget:"string"},{label:"Texto",name:"text",widget:"text"},{label:"Foto",name:"image",widget:"image",required:false}]},
+{label:"Fotos",name:"gallery",widget:"list",required:false,fields:[
+{label:"Foto",name:"image",widget:"image"},{label:"Descripción",name:"caption",widget:"string",required:false}]},
+{label:"Videos",name:"videos",widget:"list",required:false,fields:[
+{label:"Título",name:"title",widget:"string"},{label:"Enlace",name:"url",widget:"string"}]}
+]}]}]
+}});
+if(window.netlifyIdentity){window.netlifyIdentity.on("init",u=>{if(!u)window.netlifyIdentity.on("login",()=>location.reload())})}
+</script></body></html>
