@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MATVIDE | Kinesiología & Rehabilitación</title>
+<style>
+:root{--navy:#071426;--blue:#168cff;--white:#fff;--paper:#f6f8fb;--ink:#111827;--muted:#657084}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--paper);color:var(--ink)}
+a{text-decoration:none;color:inherit}.wrap{width:min(1080px,92%);margin:auto}
+header{background:var(--navy);color:white}.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.brand{font-weight:900;letter-spacing:.12em}.brand small{display:block;font-size:10px;letter-spacing:.14em;font-weight:500;opacity:.8}
+.wa{background:var(--blue);color:white;padding:11px 15px;border-radius:999px;font-weight:800}
+.hero{background:linear-gradient(135deg,#071426,#0c223f);color:white;padding:62px 0}
+.heroGrid{display:grid;grid-template-columns:1.15fr .85fr;gap:32px;align-items:center}
+.kicker{color:#56b4ff;font-size:12px;letter-spacing:.2em;font-weight:900}
+h1{font-size:clamp(42px,7vw,72px);line-height:.98;letter-spacing:-.04em;margin:14px 0 18px}
+.hero p{color:#d3ddec;font-size:19px;max-width:640px}
+.heroArt{min-height:370px;border:1px solid #23476d;border-radius:28px;display:grid;place-items:center;color:#8fbfec;text-align:center;padding:24px;overflow:hidden}
+section{padding:52px 0}.title{font-size:38px;margin:0 0 10px}.sub{color:var(--muted);margin:0 0 26px}
+.group{margin-top:34px}.group:first-of-type{margin-top:10px}
+.groupHead{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.groupHead h3{margin:0;font-size:25px}.groupLine{height:2px;background:#d7e2ef;flex:1}
+.services{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.card{background:#fff;border:1px solid #e3e8ef;border-radius:20px;padding:22px}
+.card h4{margin:0 0 8px;font-size:20px}.card p{color:var(--muted);min-height:48px}
+.price{font-size:24px;font-weight:900}.card .link{display:inline-block;margin-top:14px;font-weight:800;color:#0d6fd8}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:22px}
+.photo{min-height:300px;background:#dce6f1;border-radius:22px;display:grid;place-items:center;color:#60758d;text-align:center;overflow:hidden}
+.aboutBox{background:#fff;border-radius:22px;padding:28px;border:1px solid #e3e8ef}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:16px}
+.video{margin-top:12px;padding:18px;background:white;border-radius:16px;border:1px solid #e3e8ef}
+footer{background:var(--navy);color:#cbd5e1;padding:30px 0 70px}
+@media(max-width:760px){.heroGrid,.about{grid-template-columns:1fr}.services{grid-template-columns:1fr}.heroArt{min-height:260px}.gallery{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap top"><div class="brand"><span id="brandName">MATVIDE</span><small id="descriptor"></small></div><a class="wa" id="topWa">WhatsApp</a></div></header>
+<main>
+<section class="hero"><div class="wrap heroGrid"><div><div class="kicker">ATENCIÓN A DOMICILIO · <span id="loc"></span></div><h1 id="heroTitle"></h1><p id="heroText"></p><a class="wa" id="heroWa">Consultar por WhatsApp</a></div><div class="heroArt" id="heroArt">Sube tu foto principal desde el panel de administración.</div></div></section>
+
+<section>
+  <div class="wrap">
+    <h2 class="title">Servicios y precios</h2>
+    <p class="sub">Atención kinésica a domicilio para adultos y pacientes pediátricos.</p>
+
+    <div class="group">
+      <div class="groupHead"><h3>Adultos</h3><div class="groupLine"></div></div>
+      <div class="services" id="adultServices"></div>
+    </div>
+
+    <div class="group">
+      <div class="groupHead"><h3>Pediatría</h3><div class="groupLine"></div></div>
+      <div class="services" id="pediatricServices"></div>
+    </div>
+  </div>
+</section>
+
+<section><div class="wrap about"><div class="photo" id="aboutPhoto">Sube tu foto profesional desde el panel.</div><div class="aboutBox"><h2 class="title" id="aboutTitle"></h2><p id="aboutText"></p><p><strong id="slogan"></strong></p></div></div></section>
+<section><div class="wrap"><h2 class="title">Fotos</h2><div id="gallery"></div></div></section>
+<section><div class="wrap"><h2 class="title">Videos</h2><div id="videos"></div></div></section>
+</main>
+<footer><div class="wrap"><strong>MATVIDE</strong> · <span id="footDesc"></span><br><span id="ig"></span></div></footer>
+<script>
+let D;
+const E=s=>String(s||"").replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+function waLink(service){
+  const n=(D.brand.whatsapp||"").replace(/\D/g,"");
+  const t=encodeURIComponent("Hola, vi la página de MATVIDE y quisiera consultar por "+service+".");
+  return (!n||n.includes("X"))?"#":"https://wa.me/"+n+"?text="+t
+}
+function card(s){
+  return '<article class="card"><h4>'+E(s.title)+'</h4><p>'+E(s.description)+'</p><div class="price">'+E(s.price)+'</div><a class="link" target="_blank" href="'+waLink(s.title.toLowerCase())+'">Consultar →</a></article>';
+}
+function render(d){
+  D=d;
+  brandName.textContent=d.brand.name;
+  descriptor.textContent=d.brand.descriptor;
+  footDesc.textContent=d.brand.descriptor;
+  loc.textContent=d.brand.location;
+  heroTitle.textContent=d.hero.title;
+  heroText.textContent=d.hero.text;
+  slogan.textContent=d.brand.slogan;
+  ig.textContent=d.brand.instagram;
+  topWa.href=waLink("una atención kinésica");
+  heroWa.href=waLink("una atención kinésica a domicilio");
+
+  if(d.hero.image){
+    heroArt.innerHTML='<img src="'+E(d.hero.image)+'" style="width:100%;height:100%;object-fit:cover;border-radius:28px">';
+  }
+
+  const adult=[], pediatric=[];
+  (d.services||[]).forEach(s=>{
+    const t=(s.title||"").toLowerCase();
+    if(t.includes("pediátr") || t.includes("pediatr")) pediatric.push(s);
+    else adult.push(s);
+  });
+
+  adultServices.innerHTML=adult.map(card).join("") || '<p class="sub">Agrega servicios para adultos desde el panel.</p>';
+  pediatricServices.innerHTML=pediatric.map(card).join("") || '<p class="sub">Agrega servicios pediátricos desde el panel.</p>';
+
+  aboutTitle.textContent=d.about.title;
+  aboutText.textContent=d.about.text;
+  if(d.about.image){
+    aboutPhoto.innerHTML='<img src="'+E(d.about.image)+'" style="width:100%;height:100%;object-fit:cover;border-radius:22px">';
+  }
+
+  gallery.innerHTML=d.gallery.length?'<div class="gallery">'+d.gallery.map(x=>'<img src="'+E(x.image)+'" alt="">').join("")+'</div>':'<p class="sub">Aún no hay fotos publicadas.</p>';
+  videos.innerHTML=d.videos.length?d.videos.map(v=>'<div class="video"><strong>'+E(v.title)+'</strong><br><a target="_blank" href="'+E(v.url)+'">Ver video →</a></div>').join(""):'<p class="sub">Aún no hay videos publicados.</p>';
+}
+fetch("site.json",{cache:"no-store"}).then(r=>r.json()).then(render);
+</script>
+</body></html>
