@@ -20,6 +20,12 @@
       "category": "adultos"
     },
     {
+      "title": "Rehabilitación funcional en Personas Mayores",
+      "description": "Atención orientada a mejorar fuerza, equilibrio, marcha, transferencias y autonomía. Prevención de caídas y recuperación funcional después de periodos de inmovilidad u hospitalización.",
+      "price": "$20.000",
+      "category": "adultos"
+    },
+    {
       "title": "Kinesiología respiratoria adulto",
       "description": "Evaluación y tratamiento kinésico respiratorio en adultos, según condición clínica y necesidad del paciente.",
       "price": "$20.000",
@@ -50,9 +56,9 @@
       "category": "otros"
     },
     {
-      "title": "Rehabilitación funcional en Personas Mayores",
-      "description": "Atención orientada a mejorar fuerza, equilibrio, marcha, transferencias y autonomía. Prevención de caídas y recuperación funcional después de periodos de inmovilidad u hospitalización.",
-      "price": "$20.000",
+      "title": "Evaluación kinésica inicial",
+      "description": "Valoración del estado funcional, identificación de necesidades, definición de objetivos y orientación del plan de tratamiento.",
+      "price": "$15.000",
       "category": "adultos"
     }
   ],
