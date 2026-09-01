@@ -1,18 +1,3 @@
-MATVIDE — ÍCONOS EN TARJETAS DE SERVICIOS
-
-Reemplaza en GitHub SOLO:
-1. index.html
-2. .pages.yml
-
-No reemplaces site.json.
-
-Después:
-- Entra a Pages CMS.
-- Abre MATVIDE > Servicios y precios.
-- Abre un servicio.
-- Verás “Ícono del servicio”.
-- Pulsa Upload y sube PNG/WebP cuadrado, idealmente con fondo transparente.
-- Save.
-
-El ícono aparecerá automáticamente arriba del nombre del servicio.
-Tamaño recomendado: 256x256 o 512x512 px.
+Reemplaza solamente tu archivo index.html en GitHub por este nuevo index.html.
+No necesitas tocar site.json ni .pages.yml.
+Después haz Commit changes y espera 1-2 minutos para que se actualice GitHub Pages.

@@ -4,30 +4,122 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#071426">
 <title>MATVIDE | Kinesiología & Rehabilitación</title>
 <style>
-:root{--navy:#071426;--navy2:#0c223f;--blue:#168cff;--sky:#62b8ff;--paper:#f6f8fb;--white:#fff;--ink:#111827;--muted:#657084;--line:#e2e8f0}
+:root{
+  --navy:#071426;--navy2:#0c223f;--blue:#167cf1;--blue2:#0e62c9;--sky:#62b8ff;
+  --paper:#f4f7fb;--white:#fff;--ink:#12233f;--muted:#657084;--line:#dfe7f1;
+  --soft:#edf5ff;--soft2:#dff0ff;--green:#25D366;--green2:#1fb759
+}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.5}
-a{text-decoration:none;color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.45}
+a{text-decoration:none;color:inherit}.wrap{width:min(1180px,92%);margin:auto}
 header{position:sticky;top:0;z-index:20;background:rgba(7,20,38,.96);backdrop-filter:blur(12px);color:#fff}
 .top{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}
 .brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.12em}.brand img{width:46px;height:46px;object-fit:contain}
 .brand small{display:block;font-size:10px;letter-spacing:.12em;font-weight:500;opacity:.78}
 .nav{display:flex;gap:18px;align-items:center;font-size:14px}.nav a:not(.wa){opacity:.82}
 .wa{display:inline-flex;align-items:center;justify-content:center;background:var(--blue);color:#fff;padding:12px 17px;border-radius:999px;font-weight:850;box-shadow:0 8px 24px rgba(22,140,255,.18)}
-.hero{min-height:680px;color:#fff;position:relative;display:flex;align-items:center;background:linear-gradient(135deg,var(--navy),var(--navy2));background-size:cover;background-position:center}
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,14,29,.92) 0%,rgba(4,14,29,.72) 48%,rgba(4,14,29,.24) 100%)}
-.hero .wrap{position:relative;z-index:1}.heroCopy{max-width:700px;padding:70px 0}
+.hero{min-height:650px;color:#fff;position:relative;display:flex;align-items:center;background:linear-gradient(135deg,var(--navy),var(--navy2));background-size:cover;background-position:center}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,14,29,.92) 0%,rgba(4,14,29,.74) 46%,rgba(4,14,29,.20) 100%)}
+.hero .wrap{position:relative;z-index:1}.heroCopy{max-width:700px;padding:72px 0}
 .kicker{font-size:12px;letter-spacing:.2em;color:var(--sky);font-weight:900;margin-bottom:18px}
-h1{font-size:clamp(48px,7vw,82px);line-height:.96;letter-spacing:-.045em;margin:0 0 22px;max-width:780px}
+h1{font-size:clamp(46px,7vw,82px);line-height:.96;letter-spacing:-.045em;margin:0 0 22px;max-width:780px}
 .lead{font-size:20px;color:#d7e1ef;max-width:650px;margin:0 0 28px}.heroActions{display:flex;flex-wrap:wrap;gap:12px}
 .ghost{border:1px solid rgba(255,255,255,.45);padding:12px 17px;border-radius:999px;font-weight:800}
-section{padding:62px 0}.sectionHead{max-width:760px;margin-bottom:28px}.label{font-size:12px;letter-spacing:.18em;color:#0d78df;font-weight:900;margin-bottom:9px}
-.title{font-size:clamp(34px,5vw,50px);line-height:1.02;letter-spacing:-.035em;margin:0 0 10px}.sub{color:var(--muted);font-size:17px;margin:0}
-.group{margin-top:34px}.groupHead{display:flex;gap:14px;align-items:center;margin-bottom:16px}.groupHead h3{margin:0;font-size:26px}.groupLine{height:2px;background:#d8e3ef;flex:1}
-.services{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:23px;box-shadow:0 7px 22px rgba(15,23,42,.035)}
-.serviceIcon{width:52px;height:52px;border-radius:15px;background:#eaf4ff;display:grid;place-items:center;margin-bottom:15px;overflow:hidden}.serviceIcon img{width:34px;height:34px;object-fit:contain}.card h4{margin:0 0 8px;font-size:20px}.card p{margin:0;color:var(--muted);min-height:68px}.price{font-size:25px;font-weight:900;margin-top:18px}.link{display:inline-block;color:#096fda;font-weight:850;margin-top:12px}
-.soft{background:#eef4fb}.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.painCard{background:#fff;border-radius:20px;padding:20px;border:1px solid #dfe7ef;min-height:185px}
-.num{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#e7f2ff;color:#0876de;font-weight:900;margin-bottom:16px}.painCard h3{font-size:17px;margin:0 0 8px}.painCard p{color:var(--muted);font-size:14px;margin:0}
+
+section{padding:62px 0}
+.sectionHead{max-width:760px;margin-bottom:28px}
+.label{font-size:12px;letter-spacing:.18em;color:#0d78df;font-weight:900;margin-bottom:9px}
+.title{font-size:clamp(34px,5vw,50px);line-height:1.02;letter-spacing:-.035em;margin:0 0 10px}
+.sub{color:var(--muted);font-size:17px;margin:0}
+
+.servicesBoard{
+  background:linear-gradient(180deg,#fafdff,#f6f9fd);
+  border:1px solid #e6edf6;border-radius:28px;padding:22px;
+  box-shadow:0 18px 40px rgba(18,35,63,.07)
+}
+.boardTop,.boardBottom{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:stretch
+}
+.boardBottom{margin-top:18px}
+
+.groupHeader{
+  display:flex;align-items:center;gap:12px;margin:8px 0 14px
+}
+.groupHeader .icon{
+  width:28px;height:28px;display:grid;place-items:center;color:#133d87
+}
+.groupHeader .icon svg{width:24px;height:24px;fill:#133d87}
+.groupHeader h3{margin:0;font-size:20px;color:#133d87}
+.groupHeader .line{height:2px;flex:1;background:#cfe0f2}
+
+.sectionColumn{grid-column:span 2}
+.cardGrid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.cardGrid1{display:grid;grid-template-columns:1fr;gap:16px}
+
+.serviceCard{
+  background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px 16px 16px;
+  box-shadow:0 8px 22px rgba(15,23,42,.045);display:flex;flex-direction:column;align-items:center;min-height:100%
+}
+.serviceIconWrap{
+  width:126px;height:126px;border-radius:50%;background:#e7f1fc;display:grid;place-items:center;margin-bottom:12px;overflow:hidden
+}
+.serviceIconWrap img{width:92px;height:92px;object-fit:contain}
+.serviceIconPlaceholder{
+  width:80px;height:80px;border-radius:24px;background:linear-gradient(135deg,#bad9fb,#ddecfb)
+}
+.serviceCard h4{
+  margin:0 0 8px;font-size:18px;line-height:1.15;color:#163a7d;text-align:center;min-height:42px;display:flex;align-items:center;justify-content:center
+}
+.serviceCard p{
+  margin:0;color:#4f6687;font-size:14px;text-align:center;min-height:78px;max-width:95%
+}
+.priceBox{
+  width:100%;margin-top:14px;background:#edf4fb;border-radius:14px;padding:12px 10px;text-align:center
+}
+.price{
+  font-size:22px;font-weight:900;line-height:1;color:#11326c
+}
+.priceSmall{
+  font-size:13px;color:#3d5780;margin-top:4px
+}
+.askBtn{
+  width:100%;margin-top:12px;border-radius:14px;padding:13px 14px;
+  background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;font-weight:850;
+  display:flex;align-items:center;justify-content:center;gap:10px
+}
+.askBtn svg{width:19px;height:19px;fill:#fff;display:block}
+
+.ctaMini{
+  background:linear-gradient(180deg,#eff7ff,#ebf4ff);
+  border:1px solid #dbe8f6;border-radius:22px;padding:18px 16px 16px;
+  display:flex;flex-direction:column;min-height:100%
+}
+.ctaMiniHead{
+  display:flex;align-items:flex-start;gap:10px;color:#15397b;margin-bottom:8px
+}
+.ctaMiniHead svg{width:26px;height:26px;fill:#163a7d}
+.ctaMini h4{margin:0;font-size:18px;color:#15397b}
+.ctaMini p{margin:0 0 14px;color:#4c6488;font-size:14px}
+.ctaMini .greenBtn{
+  margin:2px 0 14px;display:flex;align-items:center;justify-content:center;gap:10px;
+  background:linear-gradient(135deg,var(--green),var(--green2));color:#fff;border-radius:14px;
+  padding:13px 14px;font-weight:850
+}
+.ctaMini .greenBtn svg{width:20px;height:20px;fill:#fff}
+.ctaMini .miniFeatures{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding-top:14px;border-top:2px solid #cfe0f2;
+  text-align:center;color:#173d81;font-size:12px
+}
+.ctaMini .miniFeatures .fIcon svg{width:22px;height:22px;fill:#173d81}
+.ctaMini .claim{
+  margin-top:auto;text-align:center;color:#173d81;font-size:16px;font-style:italic;font-weight:700;padding-top:16px
+}
+
+.soft{background:#eef4fb}
+.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.painCard{background:#fff;border-radius:20px;padding:20px;border:1px solid #dfe7ef;min-height:185px}
+.num{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#e7f2ff;color:#0876de;font-weight:900;margin-bottom:16px}
+.painCard h3{font-size:17px;margin:0 0 8px}.painCard p{color:var(--muted);font-size:14px;margin:0}
 .why{background:var(--navy);color:#fff}.why .label{color:var(--sky)}.why .sub{color:#b9c7d8}.whyGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
 .whyCard{border:1px solid #24415f;border-radius:20px;padding:22px;background:rgba(255,255,255,.035)}.whyCard b{font-size:18px}.whyCard p{margin:8px 0 0;color:#c5d0df}
 .about{display:grid;grid-template-columns:.9fr 1.1fr;gap:24px;align-items:stretch}.aboutPhoto{min-height:430px;background:#dce6f1;border-radius:26px;overflow:hidden;display:grid;place-items:center;color:#60758d;text-align:center}
@@ -40,8 +132,22 @@ section{padding:62px 0}.sectionHead{max-width:760px;margin-bottom:28px}.label{fo
 footer{background:#050f1e;color:#c7d2df;padding:30px 0 90px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .floatWa{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;z-index:25;box-shadow:0 10px 25px rgba(37,211,102,.28)}.floatWa svg{width:30px;height:30px;display:block;fill:#fff}
 .hidden{display:none!important}
-@media(max-width:900px){.grid5{grid-template-columns:repeat(2,1fr)}.whyGrid{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}}
-@media(max-width:700px){.nav a:not(.wa){display:none}.hero{min-height:620px;background-position:center}.hero::before{background:linear-gradient(180deg,rgba(4,14,29,.68),rgba(4,14,29,.95))}.services,.testimonials,.videoList{grid-template-columns:1fr}.grid5,.whyGrid{grid-template-columns:1fr}.card p{min-height:auto}.gallery{grid-template-columns:1fr 1fr}}
+
+@media(max-width:1080px){
+  .boardTop{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .boardBottom{grid-template-columns:1fr}
+}
+@media(max-width:900px){
+  .grid5{grid-template-columns:repeat(2,1fr)}.whyGrid{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+  .nav a:not(.wa){display:none}.hero{min-height:620px;background-position:center}.hero::before{background:linear-gradient(180deg,rgba(4,14,29,.68),rgba(4,14,29,.95))}
+  .boardTop,.boardBottom,.cardGrid2,.testimonials,.videoList{grid-template-columns:1fr}
+  .sectionColumn{grid-column:auto}
+  .grid5,.whyGrid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}
+  .serviceCard p{min-height:auto}
+  .ctaMini .miniFeatures{grid-template-columns:repeat(3,1fr)}
+}
 </style>
 </head>
 <body>
@@ -50,10 +156,32 @@ footer{background:#050f1e;color:#c7d2df;padding:30px 0 90px}.foot{display:flex;j
 <main>
 <section class="hero" id="hero"><div class="wrap"><div class="heroCopy"><div class="kicker" id="heroBadge"></div><h1 id="heroTitle"></h1><p class="lead" id="heroText"></p><div class="heroActions"><a class="wa" id="heroWa" href="#">Consultar por WhatsApp</a><a class="ghost" href="#servicios">Ver servicios</a></div></div></div></section>
 
-<section id="servicios"><div class="wrap"><div class="sectionHead"><div class="label">SERVICIOS</div><h2 class="title">Atención para cada etapa.</h2><p class="sub">Elige el tipo de atención que necesitas. Puedes consultar directamente por WhatsApp.</p></div>
-<div class="group"><div class="groupHead"><h3>Adultos</h3><div class="groupLine"></div></div><div class="services" id="adultServices"></div></div>
-<div class="group"><div class="groupHead"><h3>Pediatría</h3><div class="groupLine"></div></div><div class="services" id="pediatricServices"></div></div>
-<div class="group" id="otherGroup"><div class="groupHead"><h3>Otros servicios</h3><div class="groupLine"></div></div><div class="services" id="otherServices"></div></div></div></section>
+<section id="servicios">
+  <div class="wrap">
+    <div class="servicesBoard">
+      <div class="groupHeader"><span class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-4.42 0-8 2.01-8 4.5V21h16v-2.5c0-2.49-3.58-4.5-8-4.5Z"/></svg>
+      </span><h3>Adultos</h3><span class="line"></span></div>
+      <div class="boardTop" id="adultServices"></div>
+
+      <div class="boardBottom">
+        <div class="sectionColumn">
+          <div class="groupHeader"><span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M9 3a3 3 0 1 1-3 3 3 3 0 0 1 3-3Zm6 0a3 3 0 1 1-3 3 3 3 0 0 1 3-3Zm-9.36 8.11A4.52 4.52 0 0 1 9 9.5a4.5 4.5 0 0 1 3.37 1.54A4.49 4.49 0 0 1 15.74 9.5 4.58 4.58 0 0 1 20 14.2V20h-2v-5h-1v5h-2v-4.33L13.5 14 12 15.67V20h-2v-5H9v5H7v-5H6v5H4v-5.8a4.54 4.54 0 0 1 1.64-3.09Z"/></svg>
+          </span><h3>Pediatría</h3><span class="line"></span></div>
+          <div class="cardGrid2" id="pediatricServices"></div>
+        </div>
+
+        <div class="sectionColumn">
+          <div class="groupHeader"><span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 21c-4.97-2.27-8-6.09-8-10.35A4.7 4.7 0 0 1 8.7 6a4.94 4.94 0 0 1 3.3 1.26A4.94 4.94 0 0 1 15.3 6 4.7 4.7 0 0 1 20 10.65C20 14.91 16.97 18.73 12 21ZM3 22v-6h2v3.59l2.3-2.29 1.4 1.41L6.41 21H10v2Z"/></svg>
+          </span><h3>Otros servicios</h3><span class="line"></span></div>
+          <div class="cardGrid2" id="otherServicesArea"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="soft"><div class="wrap"><div class="sectionHead"><div class="label">¿NECESITAS ORIENTACIÓN?</div><h2 class="title" id="painTitle"></h2><p class="sub" id="painSubtitle"></p></div><div class="grid5" id="painGrid"></div></div></section>
 
@@ -95,24 +223,77 @@ function mediaUrl(path){
   }
   return `/${clean}`;
 }
-function serviceCard(s){const icon=s.icon ? `<div class="serviceIcon"><img src="${E(mediaUrl(s.icon))}" alt=""></div>` : "";return `<article class="card">${icon}<h4>${E(s.title)}</h4><p>${E(s.description)}</p><div class="price">${E(s.price)}</div><a class="link" target="_blank" rel="noopener" href="${waLink((s.title||"una atención").toLowerCase())}">Consultar →</a></article>`}
-function getCategory(s){if(s.category)return s.category;const t=(s.title||"").toLowerCase();if(t.includes("pediatr"))return"pediatria";if(t.includes("masoterapia")||t.includes("masaje")||t.includes("vendaje"))return"otros";return"adultos"}
+function iconMarkup(s){
+  if(s.icon){return `<div class="serviceIconWrap"><img src="${E(mediaUrl(s.icon))}" alt=""></div>`}
+  return `<div class="serviceIconWrap"><div class="serviceIconPlaceholder"></div></div>`
+}
+function whatsappIcon(){
+  return `<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M19.11 17.34c-.27-.14-1.59-.78-1.84-.87-.25-.09-.43-.14-.61.14-.18.27-.7.87-.86 1.05-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.48-.84-2.03-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27s.98 2.63 1.11 2.82c.14.18 1.92 2.93 4.65 4.11.65.28 1.16.45 1.56.58.66.21 1.25.18 1.72.11.52-.08 1.59-.65 1.82-1.27.23-.62.23-1.15.16-1.27-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3.2A12.69 12.69 0 0 0 5.1 22.35L3.2 28.8l6.61-1.74A12.68 12.68 0 1 0 16.02 3.2zm0 22.98a10.2 10.2 0 0 1-5.2-1.43l-.37-.22-3.92 1.03 1.05-3.82-.24-.39a10.3 10.3 0 1 1 8.68 4.83z"/></svg>`
+}
+function serviceCard(s){
+  return `<article class="serviceCard">
+    ${iconMarkup(s)}
+    <h4>${E(s.title)}</h4>
+    <p>${E(s.description)}</p>
+    <div class="priceBox">
+      <div class="price">${E(s.price)}</div>
+      <div class="priceSmall">por sesión</div>
+    </div>
+    <a class="askBtn" target="_blank" rel="noopener" href="${waLink((s.title||"una atención").toLowerCase())}">${whatsappIcon()}<span>Consultar</span></a>
+  </article>`
+}
+function bookingCard(){
+  return `<aside class="ctaMini">
+    <div class="ctaMiniHead">
+      <svg viewBox="0 0 24 24"><path d="M7 2h2v2h6V2h2v2h2a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2Zm12 7H5v10h14ZM7 11h4v4H7Z"/></svg>
+      <div><h4>¿Quieres agendar?</h4></div>
+    </div>
+    <p>Escríbeme por WhatsApp y conversemos sobre la mejor opción para ti o tu hijo/a.</p>
+    <a class="greenBtn" target="_blank" rel="noopener" href="${waLink("una atención kinésica a domicilio")}">${whatsappIcon()}<span>Contactar por WhatsApp</span></a>
+    <div class="miniFeatures">
+      <div><div class="fIcon"><svg viewBox="0 0 24 24"><path d="M12 3 3 10v11h7v-6h4v6h7V10Z"/></svg></div>Atención<br>a domicilio</div>
+      <div><div class="fIcon"><svg viewBox="0 0 24 24"><path d="m12 2 8 3v6c0 5.25-3.4 10.17-8 11-4.6-.83-8-5.75-8-11V5Zm3.71 7.29L11 14l-2.71-2.71-1.41 1.41L11 16.83l6.12-6.12Z"/></svg></div>Plan<br>personalizado</div>
+      <div><div class="fIcon"><svg viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-4.42 0-8 2.01-8 4.5V21h16v-2.5c0-2.49-3.58-4.5-8-4.5Z"/></svg></div>Seguimiento<br>continuo</div>
+    </div>
+    <div class="claim">Tu salud,<br>mi compromiso</div>
+  </aside>`
+}
+function getCategory(s){
+  if(s.category) return s.category;
+  const t=(s.title||"").toLowerCase();
+  if(t.includes("pediatr")) return "pediatria";
+  if(t.includes("masoterapia")||t.includes("masaje")||t.includes("vendaje")) return "otros";
+  return "adultos";
+}
 function render(d){
-D=d;const b=d.brand||{},h=d.hero||{};
-brandName.textContent=b.name||"MATVIDE";descriptor.textContent=b.descriptor||"";footName.textContent=b.name||"MATVIDE";footDesc.textContent=b.descriptor||"";footLoc.textContent=b.location||"";ig.textContent=b.instagram||"";slogan.textContent=b.slogan||"";
-if(b.logo){logoImg.src=mediaUrl(b.logo);logoImg.classList.remove("hidden")}
-heroBadge.textContent=h.badge||("ATENCIÓN A DOMICILIO · "+(b.location||""));heroTitle.textContent=h.title||"Kinesiología a domicilio";heroText.textContent=h.text||"Atención personalizada en tu hogar.";
-if(h.image)hero.style.backgroundImage=`url("${mediaUrl(h.image).replace(/"/g,"%22")}")`;
-[topWa,heroWa,ctaWa,floatWa].forEach(a=>{a.href=waLink("una atención kinésica a domicilio");a.target="_blank";a.rel="noopener"});
-const groups={adultos:[],pediatria:[],otros:[]};(d.services||[]).forEach(s=>{const c=getCategory(s);(groups[c]||groups.adultos).push(s)});
-adultServices.innerHTML=groups.adultos.map(serviceCard).join("");pediatricServices.innerHTML=groups.pediatria.map(serviceCard).join("");otherServices.innerHTML=groups.otros.map(serviceCard).join("");otherGroup.classList.toggle("hidden",groups.otros.length===0);
-const p=d.pain_points||{};painTitle.textContent=p.title||"¿Te pasa algo de esto?";painSubtitle.textContent=p.subtitle||"Cuéntame qué necesitas.";painGrid.innerHTML=(p.items||[]).map((x,i)=>`<article class="painCard"><div class="num">${i+1}</div><h3>${E(x.title)}</h3><p>${E(x.text)}</p></article>`).join("");
-const w=d.why_choose||{};whyTitle.textContent=w.title||"¿Por qué elegir MATVIDE?";whySubtitle.textContent=w.subtitle||"";whyGrid.innerHTML=(w.items||[]).map(x=>`<article class="whyCard"><b>${E(x.title)}</b><p>${E(x.text)}</p></article>`).join("");
-const a=d.about||{};aboutTitle.textContent=a.title||"Sobre MATVIDE";aboutText.textContent=a.text||"";if(a.image)aboutPhoto.innerHTML=`<img src="${E(mediaUrl(a.image))}" alt="Kinesiólogo MATVIDE">`;
-const ts=d.testimonials||[];if(ts.length){testimonialsSection.classList.remove("hidden");testimonialsTitle.textContent=d.testimonials_title||"Experiencias de pacientes";testimonials.innerHTML=ts.map(t=>`<article class="quote"><p>“${E(t.text)}”</p><b>${E(t.name)}</b><small>${E(t.detail||"")}</small></article>`).join("")}
-faq.innerHTML=(d.faq||[]).map(f=>`<details><summary>${E(f.question)}</summary><p>${E(f.answer)}</p></details>`).join("");
-const gal=d.gallery||[];if(gal.length){gallerySection.classList.remove("hidden");gallery.innerHTML=gal.map(g=>`<img loading="lazy" src="${E(mediaUrl(g.image))}" alt="${E(g.caption||"MATVIDE")}">`).join("")}
-const vids=d.videos||[];if(vids.length){videosSection.classList.remove("hidden");videos.innerHTML=vids.map(v=>`<article class="videoCard"><strong>${E(v.title)}</strong><br><a class="link" target="_blank" rel="noopener" href="${E(v.url)}">Ver video →</a></article>`).join("")}
+  D=d;
+  const b=d.brand||{},h=d.hero||{};
+  brandName.textContent=b.name||"MATVIDE";descriptor.textContent=b.descriptor||"";footName.textContent=b.name||"MATVIDE";footDesc.textContent=b.descriptor||"";footLoc.textContent=b.location||"";ig.textContent=b.instagram||"";slogan.textContent=b.slogan||"";
+  if(b.logo){logoImg.src=mediaUrl(b.logo);logoImg.classList.remove("hidden")}
+  heroBadge.textContent=h.badge||("ATENCIÓN A DOMICILIO · "+(b.location||""));heroTitle.textContent=h.title||"Kinesiología a domicilio";heroText.textContent=h.text||"Atención personalizada en tu hogar.";
+  if(h.image)hero.style.backgroundImage=`url("${mediaUrl(h.image).replace(/"/g,"%22")}")`;
+  [topWa,heroWa,ctaWa,floatWa].forEach(a=>{a.href=waLink("una atención kinésica a domicilio");a.target="_blank";a.rel="noopener"});
+
+  const groups={adultos:[],pediatria:[],otros:[]};
+  (d.services||[]).forEach(s=>{const c=getCategory(s);(groups[c]||groups.adultos).push(s)});
+
+  adultServices.innerHTML=groups.adultos.map(serviceCard).join("");
+  pediatricServices.innerHTML=groups.pediatria.map(serviceCard).join("");
+
+  const otherCards = groups.otros.map(serviceCard);
+  while(otherCards.length < 1) otherCards.push("");  // at least one slot if empty
+  otherServicesArea.innerHTML = otherCards.join("") + bookingCard();
+
+  const p=d.pain_points||{};painTitle.textContent=p.title||"¿Te pasa algo de esto?";painSubtitle.textContent=p.subtitle||"Cuéntame qué necesitas.";painGrid.innerHTML=(p.items||[]).map((x,i)=>`<article class="painCard"><div class="num">${i+1}</div><h3>${E(x.title)}</h3><p>${E(x.text)}</p></article>`).join("");
+  const w=d.why_choose||{};whyTitle.textContent=w.title||"¿Por qué elegir MATVIDE?";whySubtitle.textContent=w.subtitle||"";whyGrid.innerHTML=(w.items||[]).map(x=>`<article class="whyCard"><b>${E(x.title)}</b><p>${E(x.text)}</p></article>`).join("");
+  const a=d.about||{};aboutTitle.textContent=a.title||"Sobre MATVIDE";aboutText.textContent=a.text||"";if(a.image)aboutPhoto.innerHTML=`<img src="${E(mediaUrl(a.image))}" alt="Kinesiólogo MATVIDE">`;
+
+  const ts=d.testimonials||[];
+  if(ts.length){testimonialsSection.classList.remove("hidden");testimonialsTitle.textContent=d.testimonials_title||"Experiencias de pacientes";testimonials.innerHTML=ts.map(t=>`<article class="quote"><p>“${E(t.text)}”</p><b>${E(t.name)}</b><small>${E(t.detail||"")}</small></article>`).join("")}
+
+  faq.innerHTML=(d.faq||[]).map(f=>`<details><summary>${E(f.question)}</summary><p>${E(f.answer)}</p></details>`).join("");
+  const gal=d.gallery||[];if(gal.length){gallerySection.classList.remove("hidden");gallery.innerHTML=gal.map(g=>`<img loading="lazy" src="${E(mediaUrl(g.image))}" alt="${E(g.caption||"MATVIDE")}">`).join("")}
+  const vids=d.videos||[];if(vids.length){videosSection.classList.remove("hidden");videos.innerHTML=vids.map(v=>`<article class="videoCard"><strong>${E(v.title)}</strong><br><a class="link" target="_blank" rel="noopener" href="${E(v.url)}">Ver video →</a></article>`).join("")}
 }
 fetch("site.json",{cache:"no-store"}).then(r=>r.json()).then(render).catch(e=>console.error(e));
 </script>
