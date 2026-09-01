@@ -25,7 +25,7 @@ section{padding:62px 0}.sectionHead{max-width:760px;margin-bottom:28px}.label{fo
 .title{font-size:clamp(34px,5vw,50px);line-height:1.02;letter-spacing:-.035em;margin:0 0 10px}.sub{color:var(--muted);font-size:17px;margin:0}
 .group{margin-top:34px}.groupHead{display:flex;gap:14px;align-items:center;margin-bottom:16px}.groupHead h3{margin:0;font-size:26px}.groupLine{height:2px;background:#d8e3ef;flex:1}
 .services{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:23px;box-shadow:0 7px 22px rgba(15,23,42,.035)}
-.card h4{margin:0 0 8px;font-size:20px}.card p{margin:0;color:var(--muted);min-height:68px}.price{font-size:25px;font-weight:900;margin-top:18px}.link{display:inline-block;color:#096fda;font-weight:850;margin-top:12px}
+.serviceIcon{width:52px;height:52px;border-radius:15px;background:#eaf4ff;display:grid;place-items:center;margin-bottom:15px;overflow:hidden}.serviceIcon img{width:34px;height:34px;object-fit:contain}.card h4{margin:0 0 8px;font-size:20px}.card p{margin:0;color:var(--muted);min-height:68px}.price{font-size:25px;font-weight:900;margin-top:18px}.link{display:inline-block;color:#096fda;font-weight:850;margin-top:12px}
 .soft{background:#eef4fb}.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.painCard{background:#fff;border-radius:20px;padding:20px;border:1px solid #dfe7ef;min-height:185px}
 .num{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#e7f2ff;color:#0876de;font-weight:900;margin-bottom:16px}.painCard h3{font-size:17px;margin:0 0 8px}.painCard p{color:var(--muted);font-size:14px;margin:0}
 .why{background:var(--navy);color:#fff}.why .label{color:var(--sky)}.why .sub{color:#b9c7d8}.whyGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
@@ -95,7 +95,7 @@ function mediaUrl(path){
   }
   return `/${clean}`;
 }
-function serviceCard(s){return `<article class="card"><h4>${E(s.title)}</h4><p>${E(s.description)}</p><div class="price">${E(s.price)}</div><a class="link" target="_blank" rel="noopener" href="${waLink((s.title||"una atención").toLowerCase())}">Consultar →</a></article>`}
+function serviceCard(s){const icon=s.icon ? `<div class="serviceIcon"><img src="${E(mediaUrl(s.icon))}" alt=""></div>` : "";return `<article class="card">${icon}<h4>${E(s.title)}</h4><p>${E(s.description)}</p><div class="price">${E(s.price)}</div><a class="link" target="_blank" rel="noopener" href="${waLink((s.title||"una atención").toLowerCase())}">Consultar →</a></article>`}
 function getCategory(s){if(s.category)return s.category;const t=(s.title||"").toLowerCase();if(t.includes("pediatr"))return"pediatria";if(t.includes("masoterapia")||t.includes("masaje")||t.includes("vendaje"))return"otros";return"adultos"}
 function render(d){
 D=d;const b=d.brand||{},h=d.hero||{};

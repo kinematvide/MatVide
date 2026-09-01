@@ -1,10 +1,18 @@
-MATVIDE — FIX PARA GITHUB PAGES
+MATVIDE — ÍCONOS EN TARJETAS DE SERVICIOS
 
-Reemplaza en GitHub solamente:
+Reemplaza en GitHub SOLO:
 1. index.html
 2. .pages.yml
 
-Esto corrige las rutas de imágenes cuando la web se publica en GitHub Pages.
-Después de hacer Commit, GitHub Pages actualizará automáticamente la misma web.
+No reemplaces site.json.
 
-No reemplaces site.json: así conservas tus textos, categorías, precios y fotos actuales.
+Después:
+- Entra a Pages CMS.
+- Abre MATVIDE > Servicios y precios.
+- Abre un servicio.
+- Verás “Ícono del servicio”.
+- Pulsa Upload y sube PNG/WebP cuadrado, idealmente con fondo transparente.
+- Save.
+
+El ícono aparecerá automáticamente arriba del nombre del servicio.
+Tamaño recomendado: 256x256 o 512x512 px.
