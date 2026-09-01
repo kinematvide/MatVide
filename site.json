@@ -14,6 +14,12 @@
   },
   "services": [
     {
+      "title": "Kinesiología Respiratoria",
+      "description": "Evaluación y tratamiento kinésico respiratorio orientado a favorecer la ventilación, movilización de secreciones y manejo de síntomas respiratorios, según la condición y necesidades de cada paciente.",
+      "price": "$15.000",
+      "category": "adultos"
+    },
+    {
       "title": "Rehabilitación Musculoesquelética",
       "description": "Evaluación y tratamiento de lesiones musculares y articulares, dolor, limitación de movilidad y pérdida de fuerza, orientado a recuperar la función y retomar tus actividades.",
       "price": "$20.000",
@@ -23,12 +29,6 @@
       "title": "Rehabilitación funcional en Personas Mayores",
       "description": "Atención orientada a mejorar fuerza, equilibrio, marcha, transferencias y autonomía. Prevención de caídas y recuperación funcional después de periodos de inmovilidad u hospitalización.",
       "price": "$20.000",
-      "category": "adultos"
-    },
-    {
-      "title": "Kinesiología Respiratoria",
-      "description": "Evaluación y tratamiento kinésico respiratorio orientado a favorecer la ventilación, movilización de secreciones y manejo de síntomas respiratorios, según la condición y necesidades de cada paciente.",
-      "price": "$15.000",
       "category": "adultos"
     },
     {
