@@ -78,23 +78,35 @@ footer{background:#050f1e;color:#c7d2df;padding:30px 0 90px}.foot{display:flex;j
 let D;
 const E=s=>String(s||"").replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 function waLink(topic){const n=(D?.brand?.whatsapp||"").replace(/\D/g,"");const t=encodeURIComponent("Hola, vi la página de MATVIDE y quisiera consultar por "+topic+".");return (!n||n.includes("X"))?"#":"https://wa.me/"+n+"?text="+t}
+function mediaUrl(path){
+  if(!path) return "";
+  const p=String(path);
+  if(/^https?:\/\//i.test(p) || p.startsWith("data:")) return p;
+  const clean=p.replace(/^\/+/, "");
+  if(location.hostname.endsWith("github.io")){
+    const parts=location.pathname.split("/").filter(Boolean);
+    const repo=parts.length ? parts[0] : "";
+    return repo ? `/${repo}/${clean}` : `/${clean}`;
+  }
+  return `/${clean}`;
+}
 function serviceCard(s){return `<article class="card"><h4>${E(s.title)}</h4><p>${E(s.description)}</p><div class="price">${E(s.price)}</div><a class="link" target="_blank" rel="noopener" href="${waLink((s.title||"una atención").toLowerCase())}">Consultar →</a></article>`}
 function getCategory(s){if(s.category)return s.category;const t=(s.title||"").toLowerCase();if(t.includes("pediatr"))return"pediatria";if(t.includes("masoterapia")||t.includes("masaje")||t.includes("vendaje"))return"otros";return"adultos"}
 function render(d){
 D=d;const b=d.brand||{},h=d.hero||{};
 brandName.textContent=b.name||"MATVIDE";descriptor.textContent=b.descriptor||"";footName.textContent=b.name||"MATVIDE";footDesc.textContent=b.descriptor||"";footLoc.textContent=b.location||"";ig.textContent=b.instagram||"";slogan.textContent=b.slogan||"";
-if(b.logo){logoImg.src=b.logo;logoImg.classList.remove("hidden")}
+if(b.logo){logoImg.src=mediaUrl(b.logo);logoImg.classList.remove("hidden")}
 heroBadge.textContent=h.badge||("ATENCIÓN A DOMICILIO · "+(b.location||""));heroTitle.textContent=h.title||"Kinesiología a domicilio";heroText.textContent=h.text||"Atención personalizada en tu hogar.";
-if(h.image)hero.style.backgroundImage=`url("${String(h.image).replace(/"/g,"%22")}")`;
+if(h.image)hero.style.backgroundImage=`url("${mediaUrl(h.image).replace(/"/g,"%22")}")`;
 [topWa,heroWa,ctaWa,floatWa].forEach(a=>{a.href=waLink("una atención kinésica a domicilio");a.target="_blank";a.rel="noopener"});
 const groups={adultos:[],pediatria:[],otros:[]};(d.services||[]).forEach(s=>{const c=getCategory(s);(groups[c]||groups.adultos).push(s)});
 adultServices.innerHTML=groups.adultos.map(serviceCard).join("");pediatricServices.innerHTML=groups.pediatria.map(serviceCard).join("");otherServices.innerHTML=groups.otros.map(serviceCard).join("");otherGroup.classList.toggle("hidden",groups.otros.length===0);
 const p=d.pain_points||{};painTitle.textContent=p.title||"¿Te pasa algo de esto?";painSubtitle.textContent=p.subtitle||"Cuéntame qué necesitas.";painGrid.innerHTML=(p.items||[]).map((x,i)=>`<article class="painCard"><div class="num">${i+1}</div><h3>${E(x.title)}</h3><p>${E(x.text)}</p></article>`).join("");
 const w=d.why_choose||{};whyTitle.textContent=w.title||"¿Por qué elegir MATVIDE?";whySubtitle.textContent=w.subtitle||"";whyGrid.innerHTML=(w.items||[]).map(x=>`<article class="whyCard"><b>${E(x.title)}</b><p>${E(x.text)}</p></article>`).join("");
-const a=d.about||{};aboutTitle.textContent=a.title||"Sobre MATVIDE";aboutText.textContent=a.text||"";if(a.image)aboutPhoto.innerHTML=`<img src="${E(a.image)}" alt="Kinesiólogo MATVIDE">`;
+const a=d.about||{};aboutTitle.textContent=a.title||"Sobre MATVIDE";aboutText.textContent=a.text||"";if(a.image)aboutPhoto.innerHTML=`<img src="${E(mediaUrl(a.image))}" alt="Kinesiólogo MATVIDE">`;
 const ts=d.testimonials||[];if(ts.length){testimonialsSection.classList.remove("hidden");testimonialsTitle.textContent=d.testimonials_title||"Experiencias de pacientes";testimonials.innerHTML=ts.map(t=>`<article class="quote"><p>“${E(t.text)}”</p><b>${E(t.name)}</b><small>${E(t.detail||"")}</small></article>`).join("")}
 faq.innerHTML=(d.faq||[]).map(f=>`<details><summary>${E(f.question)}</summary><p>${E(f.answer)}</p></details>`).join("");
-const gal=d.gallery||[];if(gal.length){gallerySection.classList.remove("hidden");gallery.innerHTML=gal.map(g=>`<img loading="lazy" src="${E(g.image)}" alt="${E(g.caption||"MATVIDE")}">`).join("")}
+const gal=d.gallery||[];if(gal.length){gallerySection.classList.remove("hidden");gallery.innerHTML=gal.map(g=>`<img loading="lazy" src="${E(mediaUrl(g.image))}" alt="${E(g.caption||"MATVIDE")}">`).join("")}
 const vids=d.videos||[];if(vids.length){videosSection.classList.remove("hidden");videos.innerHTML=vids.map(v=>`<article class="videoCard"><strong>${E(v.title)}</strong><br><a class="link" target="_blank" rel="noopener" href="${E(v.url)}">Ver video →</a></article>`).join("")}
 }
 fetch("site.json",{cache:"no-store"}).then(r=>r.json()).then(render).catch(e=>console.error(e));
