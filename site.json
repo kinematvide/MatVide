@@ -14,14 +14,8 @@
   },
   "services": [
     {
-      "title": "Evaluación kinésica inicial",
-      "description": "Valoración del estado funcional, identificación de necesidades, definición de objetivos y orientación del plan de tratamiento.",
-      "price": "$15.000",
-      "category": "adultos"
-    },
-    {
       "title": "Rehabilitación Musculoesquelética",
-      "description": "Evaluación y tratamiento de lesiones musculares y articulares, dolor, movilidad, fuerza y recuperación funcional.",
+      "description": "Evaluación y tratamiento de lesiones musculares y articulares, dolor, limitación de movilidad y pérdida de fuerza, orientado a recuperar la función y retomar tus actividades.",
       "price": "$20.000",
       "category": "adultos"
     },
