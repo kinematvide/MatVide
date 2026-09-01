@@ -1,3 +1,16 @@
-Reemplaza solamente tu archivo index.html en GitHub por este nuevo index.html.
-No necesitas tocar site.json ni .pages.yml.
-Después haz Commit changes y espera 1-2 minutos para que se actualice GitHub Pages.
+MATVIDE — INTRODUCCIÓN DE SERVICIOS EDITABLE
+
+Reemplaza en GitHub:
+1. index.html
+2. .pages.yml  (sube pages_editable.yml y renómbralo a .pages.yml)
+
+NO reemplaces site.json.
+
+Después:
+- Recarga Pages CMS.
+- Aparecerá una nueva sección llamada “Introducción de servicios”.
+- Ahí podrás editar:
+  • Texto pequeño (por ejemplo: SERVICIOS)
+  • Título
+  • Descripción
+- Pulsa Save y la web se actualizará desde GitHub Pages.

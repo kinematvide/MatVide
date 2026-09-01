@@ -158,6 +158,11 @@ footer{background:#050f1e;color:#c7d2df;padding:30px 0 90px}.foot{display:flex;j
 
 <section id="servicios">
   <div class="wrap">
+    <div class="sectionHead">
+      <div class="label" id="servicesLabel">SERVICIOS</div>
+      <h2 class="title" id="servicesTitle">Atención kinésica según tus necesidades.</h2>
+      <p class="sub" id="servicesText">Servicios a domicilio para adultos, personas mayores y pacientes pediátricos, con un enfoque personalizado en evaluación, tratamiento y recuperación funcional.</p>
+    </div>
     <div class="servicesBoard">
       <div class="groupHeader"><span class="icon" aria-hidden="true">
         <svg viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-4.42 0-8 2.01-8 4.5V21h16v-2.5c0-2.49-3.58-4.5-8-4.5Z"/></svg>
@@ -273,6 +278,11 @@ function render(d){
   heroBadge.textContent=h.badge||("ATENCIÓN A DOMICILIO · "+(b.location||""));heroTitle.textContent=h.title||"Kinesiología a domicilio";heroText.textContent=h.text||"Atención personalizada en tu hogar.";
   if(h.image)hero.style.backgroundImage=`url("${mediaUrl(h.image).replace(/"/g,"%22")}")`;
   [topWa,heroWa,ctaWa,floatWa].forEach(a=>{a.href=waLink("una atención kinésica a domicilio");a.target="_blank";a.rel="noopener"});
+
+  const si=d.services_intro||{};
+  servicesLabel.textContent=si.label||"SERVICIOS";
+  servicesTitle.textContent=si.title||"Atención kinésica según tus necesidades.";
+  servicesText.textContent=si.text||"Servicios a domicilio para adultos, personas mayores y pacientes pediátricos, con un enfoque personalizado en evaluación, tratamiento y recuperación funcional.";
 
   const groups={adultos:[],pediatria:[],otros:[]};
   (d.services||[]).forEach(s=>{const c=getCategory(s);(groups[c]||groups.adultos).push(s)});
