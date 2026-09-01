@@ -5,128 +5,52 @@
     "slogan": "Movemos tu bienestar",
     "location": "San Carlos",
     "whatsapp": "56973786998",
-    "instagram": "@matvide.kine",
-    "logo": ""
+    "instagram": "@matvide.kine"
   },
   "hero": {
-    "badge": "ATENCIÓN KINÉSICA A DOMICILIO · SAN CARLOS",
     "title": "Kinesiología a domicilio, pensada para ti",
     "text": "Atención personalizada para adultos y niños, con evaluación, tratamiento y seguimiento según tus objetivos.",
-    "image": ""
+    "image": "/uploads/image-gen-29.png"
   },
   "services": [
     {
       "title": "Rehabilitación musculoesquelética",
       "description": "Evaluación y tratamiento de lesiones musculares y articulares, dolor, movilidad, fuerza y recuperación funcional.",
-      "price": "$20.000",
-      "category": "adultos"
+      "price": "$20.000"
     },
     {
       "title": "Kinesiología respiratoria adulto",
       "description": "Evaluación y tratamiento kinésico respiratorio en adultos, según condición clínica y necesidad del paciente.",
-      "price": "$20.000",
-      "category": "adultos"
+      "price": "$20.000"
     },
     {
       "title": "Adulto mayor y rehabilitación funcional",
       "description": "Trabajo de fuerza, equilibrio, marcha, transferencias, prevención de caídas y recuperación de autonomía.",
-      "price": "$20.000",
-      "category": "adultos"
+      "price": "$20.000"
     },
     {
       "title": "Rehabilitación deportiva",
       "description": "Evaluación, fortalecimiento, readaptación funcional y retorno progresivo a la actividad física y deportiva.",
-      "price": "$20.000",
-      "category": "adultos"
+      "price": "$20.000"
     },
     {
       "title": "Rehabilitación musculoesquelética pediátrica",
       "description": "Evaluación y tratamiento de lesiones y alteraciones musculoesqueléticas, movilidad y recuperación funcional en niños y adolescentes.",
-      "price": "$20.000",
-      "category": "pediatria"
+      "price": "$20.000"
     },
     {
       "title": "Kinesiología respiratoria pediátrica",
       "description": "Evaluación y tratamiento kinésico respiratorio en lactantes, niños y adolescentes, según condición clínica.",
-      "price": "$20.000",
-      "category": "pediatria"
+      "price": "$20.000"
     },
     {
       "title": "Masoterapia",
       "description": "Técnicas manuales orientadas a aliviar tensión muscular, favorecer la recuperación y mejorar el bienestar físico.",
-      "price": "$20.000",
-      "category": "otros"
+      "price": "$20.000"
     }
   ],
-  "pain_points": {
-    "title": "¿Te pasa algo de esto?",
-    "subtitle": "Cuéntame qué necesitas y vemos juntos la atención más adecuada.",
-    "items": [
-      {
-        "title": "Dolor muscular o articular",
-        "text": "Molestias de espalda, cuello, hombro, rodilla u otras zonas que limitan tus actividades."
-      },
-      {
-        "title": "Lesión o recuperación postoperatoria",
-        "text": "Necesitas recuperar movilidad, fuerza y seguridad para volver a tus actividades."
-      },
-      {
-        "title": "Dificultad para caminar o moverte",
-        "text": "Buscas mejorar equilibrio, fuerza, marcha o autonomía en el hogar."
-      },
-      {
-        "title": "Síntomas respiratorios",
-        "text": "Necesitas evaluación kinésica respiratoria y orientación según tu condición."
-      },
-      {
-        "title": "Volver al deporte",
-        "text": "Quieres recuperar confianza, capacidad física y retorno progresivo a tu actividad deportiva."
-      }
-    ]
-  },
-  "why_choose": {
-    "title": "¿Por qué elegir MATVIDE?",
-    "subtitle": "Una atención cercana, profesional y adaptada a cada persona.",
-    "items": [
-      {
-        "title": "Atención en tu hogar",
-        "text": "Evitas traslados y realizamos el tratamiento en un entorno cómodo y funcional para ti."
-      },
-      {
-        "title": "Plan personalizado",
-        "text": "La atención se adapta a tus objetivos, necesidades y evolución."
-      },
-      {
-        "title": "Comunicación directa",
-        "text": "Coordinación sencilla por WhatsApp antes y durante tu proceso de rehabilitación."
-      },
-      {
-        "title": "Seguimiento",
-        "text": "Revisamos avances y ajustamos el plan cuando sea necesario."
-      }
-    ]
-  },
   "about": {
     "title": "Sobre MATVIDE",
-    "text": "Atención profesional y personalizada, orientada a recuperar movimiento, funcionalidad y autonomía. Aquí puedes agregar tu experiencia, formación y áreas de trabajo.",
-    "image": ""
-  },
-  "testimonials_title": "Experiencias de pacientes",
-  "testimonials": [],
-  "faq": [
-    {
-      "question": "¿Cómo coordino una hora?",
-      "answer": "Escríbeme por WhatsApp. Revisamos el motivo de consulta, ubicación y disponibilidad antes de confirmar la atención."
-    },
-    {
-      "question": "¿Dónde realizas domicilios?",
-      "answer": "Actualmente en San Carlos. Puedes consultar por disponibilidad en sectores cercanos."
-    },
-    {
-      "question": "¿Cuánto dura una sesión?",
-      "answer": "La duración puede variar según la evaluación, objetivos y necesidades de cada paciente."
-    }
-  ],
-  "gallery": [],
-  "videos": []
+    "text": "Atención profesional y personalizada, orientada a recuperar movimiento, funcionalidad y autonomía. Aquí puedes agregar tu experiencia, formación y áreas de trabajo."
+  }
 }
