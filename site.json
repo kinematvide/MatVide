@@ -14,7 +14,7 @@
   },
   "services": [
     {
-      "title": "Rehabilitación musculoesquelética",
+      "title": "Rehabilitación Musculoesquelética",
       "description": "Evaluación y tratamiento de lesiones musculares y articulares, dolor, movilidad, fuerza y recuperación funcional.",
       "price": "$20.000",
       "category": "adultos"
@@ -54,6 +54,12 @@
       "description": "Técnicas manuales orientadas a aliviar tensión muscular, favorecer la recuperación y mejorar el bienestar físico.",
       "price": "$20.000",
       "category": "otros"
+    },
+    {
+      "title": "Rehabilitación funcional y Personas Mayores",
+      "description": "Atención orientada a mejorar fuerza, equilibrio, marcha, transferencias y autonomía. Prevención de caídas y recuperación funcional después de periodos de inmovilidad u hospitalización.",
+      "price": "$20.000",
+      "category": "adultos"
     }
   ],
   "about": {
