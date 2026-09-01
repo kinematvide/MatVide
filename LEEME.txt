@@ -1,13 +1,25 @@
-MATVIDE — VERSIÓN FÁCIL PARA SUBIR DESDE IPAD
+MATVIDE — ACTUALIZACIÓN COMPLETA
 
-Sube a GitHub estos 5 archivos sueltos:
-- index.html
-- admin.html
-- site.json
-- netlify.toml
-- LEEME.txt
+REEMPLAZA EN GITHUB ESTOS 3 ARCHIVOS:
+1. index.html
+2. site.json
+3. .pages.yml
 
-No necesitas subir carpetas en este primer paso.
-Cuando el panel funcione, las fotos crearán automáticamente la carpeta uploads.
+Qué cambia:
+- Portada con foto de fondo completa.
+- Secciones Adultos, Pediatría y Otros servicios.
+- Selector de categoría en Pages CMS.
+- Sección “¿Te pasa algo de esto?”.
+- Sección “¿Por qué elegir MATVIDE?”.
+- Testimonios.
+- Preguntas frecuentes.
+- Galería.
+- Videos.
+- Logo editable desde Pages CMS.
+- WhatsApp flotante y llamados a la acción.
 
-Después conectaremos el repositorio a Netlify y activaremos el acceso al administrador.
+IMPORTANTE:
+- site.json conserva tu WhatsApp configurado.
+- El valor de Masoterapia quedó en $20.000 como referencia: revísalo y cámbialo si corresponde.
+- Publica solo testimonios reales y con autorización; evita datos clínicos o identificatorios innecesarios.
+- Cuando subas los 3 archivos a GitHub y hagas Commit, Netlify actualizará la misma web automáticamente.
