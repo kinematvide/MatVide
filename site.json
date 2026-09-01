@@ -15,37 +15,44 @@
     {
       "title": "Rehabilitación musculoesquelética",
       "description": "Evaluación y tratamiento de lesiones musculares y articulares, dolor, movilidad, fuerza y recuperación funcional.",
-      "price": "$20.000"
+      "price": "$20.000",
+      "category": "adultos"
     },
     {
       "title": "Kinesiología respiratoria adulto",
       "description": "Evaluación y tratamiento kinésico respiratorio en adultos, según condición clínica y necesidad del paciente.",
-      "price": "$20.000"
+      "price": "$20.000",
+      "category": "adultos"
     },
     {
       "title": "Adulto mayor y rehabilitación funcional",
       "description": "Trabajo de fuerza, equilibrio, marcha, transferencias, prevención de caídas y recuperación de autonomía.",
-      "price": "$20.000"
+      "price": "$20.000",
+      "category": "adultos"
     },
     {
       "title": "Rehabilitación deportiva",
       "description": "Evaluación, fortalecimiento, readaptación funcional y retorno progresivo a la actividad física y deportiva.",
-      "price": "$20.000"
+      "price": "$20.000",
+      "category": "adultos"
     },
     {
       "title": "Rehabilitación musculoesquelética pediátrica",
       "description": "Evaluación y tratamiento de lesiones y alteraciones musculoesqueléticas, movilidad y recuperación funcional en niños y adolescentes.",
-      "price": "$20.000"
+      "price": "$20.000",
+      "category": "pediatria"
     },
     {
       "title": "Kinesiología respiratoria pediátrica",
       "description": "Evaluación y tratamiento kinésico respiratorio en lactantes, niños y adolescentes, según condición clínica.",
-      "price": "$20.000"
+      "price": "$20.000",
+      "category": "pediatria"
     },
     {
       "title": "Masoterapia",
       "description": "Técnicas manuales orientadas a aliviar tensión muscular, favorecer la recuperación y mejorar el bienestar físico.",
-      "price": "$20.000"
+      "price": "$20.000",
+      "category": "otros"
     }
   ],
   "about": {
