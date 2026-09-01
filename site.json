@@ -4,13 +4,12 @@
     "descriptor": "Kinesiología & Rehabilitación",
     "slogan": "Movemos tu bienestar",
     "location": "San Carlos",
-    "whatsapp": "569XXXXXXXX",
+    "whatsapp": "+56973786998",
     "instagram": "@matvide.kine"
   },
   "hero": {
     "title": "Atención kinésica a domicilio",
-    "text": "Evaluación, tratamiento y seguimiento personalizado en tu hogar.",
-    "image": ""
+    "text": "Evaluación, tratamiento y seguimiento personalizado en tu hogar."
   },
   "services": [
     {
@@ -41,9 +40,6 @@
   ],
   "about": {
     "title": "Sobre MATVIDE",
-    "text": "Atención profesional y personalizada, orientada a recuperar movimiento, funcionalidad y autonomía.",
-    "image": ""
-  },
-  "gallery": [],
-  "videos": []
+    "text": "Atención profesional y personalizada, orientada a recuperar movimiento, funcionalidad y autonomía."
+  }
 }
